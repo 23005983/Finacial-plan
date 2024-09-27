@@ -35,16 +35,19 @@ public class Mavenproject3{
         System.out.println("Enter estimated monthly expenditure for Other expenses:");
         double otherExpenses = mulalo.nextDouble();
 
-        // Step 3: Renting or buying decision
-        System.out.println("Do you want to rent or buy a property? (Enter 'rent' or 'buy')");
-        String choice = mulalo.next().toLowerCase();
+        System.out.println("Choose the Accomodation options");
+           
+           System.out.println("Renting accomodation");
+           System.out.println("Buying property");
+           String emptyIntLine= mulalo.nextLine();
+           String choice=mulalo.nextLine();
 
         double accommodationCost = 0.0;
 
-        if (choice.equals("rent")) {
+        if (choice.equals("Renting accommodation")) {
             System.out.println("Enter your monthly rental amount:");
             accommodationCost = mulalo.nextDouble();
-        } else if (choice.equals("buy")) {
+        } else if (choice.equals("Buying property")) {
             // Step 4: Enter home loan details
             System.out.println("Enter the purchase price of the property:");
             double purchasePrice = mulalo.nextDouble();
